@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 242134908}
   - component: {fileID: 242134907}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,7 +363,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -999
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -388,11 +388,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1438960646}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.04, y: -3.1637}
+  m_AnchoredPosition: {x: -1.7333499, y: -2.39957}
   m_SizeDelta: {x: 0.4452, y: 0.9863}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &491587976
@@ -529,7 +529,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  m_BackGroundColor: {r: 0.46708938, g: 0.7169812, b: 0.4295123, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -597,10 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fbdf1d887b5148709cad31f7445d0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleManager
-  slotA: {fileID: 0}
-  slotB: {fileID: 0}
-  slotC: {fileID: 0}
-  targetValue: 18
+  targetValue: 30
   objectsToDestroy: []
   objectsToLoad: []
   puzzleText: {fileID: 1438960644}
@@ -773,6 +770,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   gridSize: 1
   growthFactor: 1.2
+  dragSortingOrder: 10
+  pickUpSound: {fileID: 8300000, guid: 464be85b70f0a4c14985cfa539dcc85d, type: 3}
+  putDownSound: {fileID: 8300000, guid: a908ece5a6e5343229971d3996f84c22, type: 3}
+  audioSource: {fileID: 1261634039}
 --- !u!212 &658878670
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -839,12 +840,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658878667}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.69335, y: 0.88043, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &658878672
 MonoBehaviour:
@@ -871,9 +872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 0
   neededPosition: {x: -2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 0
 --- !u!114 &658878674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,9 +887,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 1
   neededPosition: {x: 0, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 1
 --- !u!114 &658878675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,9 +902,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 2
   neededPosition: {x: 2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 2
 --- !u!1 &852301498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,7 +1151,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -999
   m_Sprite: {fileID: 21300000, guid: 20020bff57ae84c6e85107ae98a9700a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1170,12 +1171,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976221308}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30665004, y: 2.88043, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1090715377
 GameObject:
@@ -1363,7 +1364,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -999
   m_Sprite: {fileID: 21300000, guid: 20020bff57ae84c6e85107ae98a9700a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1383,12 +1384,368 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199669964}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.6933498, y: 2.88043, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1261634038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1261634040}
+  - component: {fileID: 1261634039}
+  m_Layer: 0
+  m_Name: Puzzle001SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1261634039
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261634038}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1261634040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261634038}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1988061522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1275135936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1275135939}
+  - component: {fileID: 1275135938}
+  - component: {fileID: 1275135937}
+  m_Layer: 0
+  m_Name: Puzzle001Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1275135937
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275135936}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1275135938
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275135936}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: f66c79125d15846f688021628181a679, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1275135939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275135936}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409072659
 GameObject:
@@ -1465,7 +1822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ????????=18
+  m_text: PUZZLE HERE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1b430a963e2534e64ad67f353fd1d0a9, type: 2}
   m_sharedMaterial: {fileID: 3602998477100350464, guid: 1b430a963e2534e64ad67f353fd1d0a9, type: 2}
@@ -1492,7 +1849,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.2
+  m_fontSize: 19.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1716,7 +2073,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -999
   m_Sprite: {fileID: 21300000, guid: 20020bff57ae84c6e85107ae98a9700a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1736,12 +2093,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449293039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.69335, y: 2.88043, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817949338
 GameObject:
@@ -1826,6 +2183,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   gridSize: 1
   growthFactor: 1.2
+  dragSortingOrder: 10
+  pickUpSound: {fileID: 8300000, guid: 464be85b70f0a4c14985cfa539dcc85d, type: 3}
+  putDownSound: {fileID: 8300000, guid: a908ece5a6e5343229971d3996f84c22, type: 3}
+  audioSource: {fileID: 1261634039}
 --- !u!212 &1817949341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1892,12 +2253,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817949338}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.30665004, y: 0.88043, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1817949343
 MonoBehaviour:
@@ -1924,9 +2285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 0
   neededPosition: {x: -2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 0
 --- !u!114 &1817949345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1939,9 +2300,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 1
   neededPosition: {x: 0, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 1
 --- !u!114 &1817949346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1954,9 +2315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 2
   neededPosition: {x: 2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 2
 --- !u!1 &1874248495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,6 +2542,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   gridSize: 1
   growthFactor: 1.2
+  dragSortingOrder: 10
+  pickUpSound: {fileID: 8300000, guid: 464be85b70f0a4c14985cfa539dcc85d, type: 3}
+  putDownSound: {fileID: 8300000, guid: a908ece5a6e5343229971d3996f84c22, type: 3}
+  audioSource: {fileID: 1261634039}
 --- !u!212 &1950723818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2247,12 +2612,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950723815}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3066502, y: 0.88043, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1950723820
 MonoBehaviour:
@@ -2279,9 +2644,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 0
   neededPosition: {x: -2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 0
 --- !u!114 &1950723822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,9 +2659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 1
   neededPosition: {x: 0, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 1
 --- !u!114 &1950723823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2309,9 +2674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 2
   neededPosition: {x: 2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 2
 --- !u!1 &1970834022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,6 +2836,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   gridSize: 1
   growthFactor: 1.2
+  dragSortingOrder: 10
+  pickUpSound: {fileID: 8300000, guid: 464be85b70f0a4c14985cfa539dcc85d, type: 3}
+  putDownSound: {fileID: 8300000, guid: a908ece5a6e5343229971d3996f84c22, type: 3}
+  audioSource: {fileID: 1261634039}
 --- !u!212 &1972162965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2537,12 +2906,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972162962}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.6933498, y: 0.88043, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1972162967
 MonoBehaviour:
@@ -2569,9 +2938,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 0
   neededPosition: {x: -2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 0
 --- !u!114 &1972162969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2584,9 +2953,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 1
   neededPosition: {x: 0, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 1
 --- !u!114 &1972162970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,9 +2968,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 2
   neededPosition: {x: 2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 2
+--- !u!1 &1988061521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988061522}
+  m_Layer: 0
+  m_Name: Puzzle001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1988061522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988061521}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.69335, y: -0.88043, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1275135939}
+  - {fileID: 1261634040}
+  - {fileID: 242134908}
+  - {fileID: 2097379651}
+  - {fileID: 1817949342}
+  - {fileID: 1950723819}
+  - {fileID: 1972162966}
+  - {fileID: 658878671}
+  - {fileID: 1199669967}
+  - {fileID: 1449293042}
+  - {fileID: 976221311}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2097379649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,12 +3102,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097379649}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.69335, y: 0.88043, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1988061522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2097379652
 MonoBehaviour:
@@ -2712,6 +3123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   gridSize: 1
   growthFactor: 1.2
+  dragSortingOrder: 10
+  pickUpSound: {fileID: 8300000, guid: 464be85b70f0a4c14985cfa539dcc85d, type: 3}
+  putDownSound: {fileID: 8300000, guid: a908ece5a6e5343229971d3996f84c22, type: 3}
+  audioSource: {fileID: 1261634039}
 --- !u!61 &2097379653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2783,9 +3198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 0
   neededPosition: {x: -2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 0
 --- !u!114 &2097379656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2798,9 +3213,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 1
   neededPosition: {x: 0, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 1
 --- !u!114 &2097379657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2813,9 +3228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e46fe03c86f43edb0afbfce98a7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PassTileValuea
-  slotType: 2
   neededPosition: {x: 2, y: 2, z: 0}
   puzzleManager: {fileID: 519420033}
+  slotType: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2825,12 +3240,4 @@ SceneRoots:
   - {fileID: 123364058}
   - {fileID: 79795084}
   - {fileID: 491587978}
-  - {fileID: 2097379651}
-  - {fileID: 1817949342}
-  - {fileID: 1950723819}
-  - {fileID: 1972162966}
-  - {fileID: 658878671}
-  - {fileID: 1199669967}
-  - {fileID: 1449293042}
-  - {fileID: 976221311}
-  - {fileID: 242134908}
+  - {fileID: 1988061522}
