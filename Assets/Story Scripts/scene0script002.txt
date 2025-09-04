@@ -1,0 +1,20 @@
+<s>???</s>
+<l>The keypad beeps. A sharp click echoes through the room.</l>
+<l>The lock disengages.</l>
+<l>The door slides open with a hiss, releasing air that smells cleaner than what you have been breathing.</l>
+<s>You</s>
+<l>I did it.</l>
+<l>Roman numerals. X as ten but also as a multiplier. Clever.</l>
+<l>Why would someone hide the exit behind a math trick?</l>
+<s>???</s>
+<l>You step forward.</l>
+<l>The corridor beyond is narrow, its walls the same sterile steel. The hum of unseen machinery vibrates through your boots.</l>
+<l>And then, you see them.</l>
+<s>???</s>
+<l>A figure stands at the far end.</l>
+<l>Their body is encased in metal like yours. The same segmented plating. The same faint glow in the seams.</l>
+<l>Their visor reflects you back like a mirror.</l>
+<s>You</s>
+<l>Another me?</l>
+<s>Suit Figure</s>
+<l>No! You are another me!</l>

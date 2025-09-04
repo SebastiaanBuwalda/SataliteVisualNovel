@@ -33,6 +33,9 @@ public class VisualNovelDialogSystem : MonoBehaviour
     private int index = 0;
     private Coroutine typingCoroutine;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip advanceSound;
+
     void Start()
     {
         if (dialogTextAsset != null)
@@ -109,6 +112,10 @@ public class VisualNovelDialogSystem : MonoBehaviour
         }
 
         index++;
+        if (audioSource != null && advanceSound != null)
+        {
+            audioSource.PlayOneShot(advanceSound);
+        }
         if (index >= entries.Count)
         {
             Debug.Log("Dialogue finished.");

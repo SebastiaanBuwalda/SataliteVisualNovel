@@ -101,6 +101,13 @@ public class PuzzleManager : MonoBehaviour
     private void SolvePuzzle()
     {
         puzzleSolved = true;
+        StartCoroutine(SolvePuzzleCoroutine());
+        Debug.Log("Puzzle solved! Value reached: " + targetValue);
+    }
+
+    private System.Collections.IEnumerator SolvePuzzleCoroutine()
+    {
+        yield return new WaitForSeconds(3f);
 
         // Destroy objects
         foreach (var obj in objectsToDestroy)
@@ -119,8 +126,6 @@ public class PuzzleManager : MonoBehaviour
                 obj.SetActive(true);
             }
         }
-
-        Debug.Log("Puzzle solved! Value reached: " + targetValue);
     }
 
     // Allow external scripts to set slot values

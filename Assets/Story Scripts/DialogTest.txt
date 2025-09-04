@@ -1,5 +1,0 @@
-<s>???</s>
-<l>This is not my body...help.</l>
-<l>What do I do?</l>
-<s>Computer</s>
-<l>Muhahaha</l>
