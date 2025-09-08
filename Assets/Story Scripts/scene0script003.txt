@@ -1,0 +1,3 @@
+<s>???</s>
+<l>The keypad beeps. The door slides open.</l>
+<l>We did it.</l>

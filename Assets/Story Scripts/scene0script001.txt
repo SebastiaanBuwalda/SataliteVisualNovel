@@ -8,7 +8,7 @@
 <l>Where… is this?</l>
 <l>You force your eyes open.</l>
 <l>A steel room. Featureless. Empty.</l>
-<l>No windows. But it seems there's a single door.</l>
+<l>No windows. No opening but a single shut door.</l>
 <l>White noise gnaws at you at the edge of hearing.</l>
 <l>The bright light is artificial. A single, sterile LED lamp overhead.</l>
 <s>You</s>
@@ -17,15 +17,16 @@
 <s>???</s>
 <l>You reach inward, searching for yourself.</l>
 <l>But there’s nothing.</l>
-<l>No name. No age. No gender. Not even a shape to the idea of “you.”</l>
+<l>No name. No age. No gender. Not even an inkling to the idea of “you.”</l>
 <l>All that’s left are fragments.</l>
 <l>knowledge without identity. Language. Physics. Math. Facts without a life to hold them.</l>
 <s>???</s>
 <l>Your gaze drifts down.</l>
-<l>A body. If you can call it that. Wrapped head to toe in some mechanical shell. Cold metal where there should be skin.</l>
-<l>The sight twists your gut.</l>
-<l>Why?! Why am I like this?!</l>
+<l>A body. If you can call it that. Wrapped head to toe in some synthetic shell. Cold metal-like material where there should be skin.</l>
+<l>Your head is covered in a robot-like helmet. Doesn't seem like there's anything like a button or zipper to get out of this outfit-shaped prison.</l>
+<l>This sight and realization twists your gut.</l>
 <s>You</s>
+<l>Why?! Why am I like this?!</l>
 <l>…Breathe! Calm down. Logical. Be logical.</l>
 <l>But your breath quickens anyway. The air feels thinner. Your chest tightens.</l>
 <s>???</s>
@@ -33,4 +34,4 @@
 <l>You see it.</l>
 <l>By the door sits a keypad.</l>
 <l>It hums faintly, as if waiting.</l>
-<l>On its screen… a puzzle? It seems you need to make 30.</l>
+<l>On its screen… a puzzle? It seems you need to make 30, but these are not numbers.</l>

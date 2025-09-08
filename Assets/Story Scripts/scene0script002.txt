@@ -1,20 +1,49 @@
 <s>???</s>
-<l>The keypad beeps. A sharp click echoes through the room.</l>
+<l>The keypad beeps a cheery tune. A sharp click echoes through the room.</l>
 <l>The lock disengages.</l>
-<l>The door slides open with a hiss, releasing air that smells cleaner than what you have been breathing.</l>
+<l>The door slides open with a hiss, beyond it is another hallway.</l>
 <s>You</s>
-<l>I did it.</l>
-<l>Roman numerals. X as ten but also as a multiplier. Clever.</l>
+<l>I did it!</l>
+<l>So it was a puzzle with Roman numerals. X as ten but also as a multiplier. Clever.</l>
 <l>Why would someone hide the exit behind a math trick?</l>
+<l>Are those the same people that dressed me like this? The same people that erased my memory, my identity?</l>
 <s>???</s>
 <l>You step forward.</l>
-<l>The corridor beyond is narrow, its walls the same sterile steel. The hum of unseen machinery vibrates through your boots.</l>
-<l>And then, you see them.</l>
-<s>???</s>
-<l>A figure stands at the far end.</l>
-<l>Their body is encased in metal like yours. The same segmented plating. The same faint glow in the seams.</l>
-<l>Their visor reflects you back like a mirror.</l>
+<l>The corridor beyond is more narrow, its walls the same sterile steel. The hum of unseen machinery vibrates through your boots.</l>
+<l>No windows here, either.</l>
+<l>And then...</l>
+<l>You spot a figure at the far end of the hallway.</l>
+<l>Their body is encased in metal like yours. The same segmented plating and helmet. Another human?</l>
+<l>They start to run towards you. The running makes the floor clank audibly. For a moment, you feel like you might be in danger. But maybe they're just excited?</l>
 <s>You</s>
-<l>Another me?</l>
-<s>Suit Figure</s>
-<l>No! You are another me!</l>
+<l>Hey!</l>
+<s>Other Human?</s>
+<l>Geez! Don't scare me like that!</l>
+<s>You</s>
+<l>Well, you suddenly ran towards me! You're the one who scared me!</l>
+<s>Other Human?</s>
+<l>Ugh! Sorry. Because of this creepy facility, I'm too on edge.</l>
+<l>I thought maybe you were the insane doctor who experimented on me! And you'd have some answers for me.</l>
+<s>You</s>
+<l>(Doctor...? What are they talking about? I guess it does look like we're in a hospital a bit...)</l>
+<s>Other Human?</s>
+<l>Erhm....I'm sorry. it's my mistake. I guess I felt excited and happy seeing somebody else!</l>
+<s>You</s>
+<l>That's okay. Seems like we're in the same predicament.</l>
+<l>At least there's some comfort in sharing this weird situation. We should exchange information.</l>
+<l>I'm a human from planet Earth, but I forgot my identity. I still know what humans are. I know English, Math and the like.</l>
+<s>Other Human</s>
+<l>I'm the same, I forgot everything about myself. My age, my name. My favourite colour.</l>
+<l>I woke up in this empty room here about fifteen minutes ago, in this suit I can't seem to take off.</l>
+<l>I had to solve this tough math puzzle on a keypad for some reason.</l>
+<s>You</s>
+<l>Seems like the same thing happened to me. We just woke up in different locations.</l>
+<l>Thank you for telling me. Did you find anything in this hallway?</l>
+<s>Other Human</s>
+<l>Yeah. It seems like there's another keypad in the middle.</l>
+<l>So is this the rest of our existences? Solving math puzzles in a prison, and every time an identical person appears in the next room?</l>
+<s>You</s>
+<l>L...let's hope not. Let's stay focused, and solve this next keypad first.</l>
+<l>I'm confident there will be answers.</l>
+<s>Other Human</s>
+<l>You're right! Let's focus on that. Wonder what the puzzle will be this time!</l>

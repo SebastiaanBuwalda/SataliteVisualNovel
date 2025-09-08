@@ -74,5 +74,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# MacOS system files
-*.DS_Store
+# macOS Finder metadata
+.DS_Store
