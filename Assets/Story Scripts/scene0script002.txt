@@ -1,49 +1,55 @@
 <s>???</s>
-<l>The keypad beeps a cheery tune. A sharp click echoes through the room.</l>
-<l>The lock disengages.</l>
-<l>The door slides open with a hiss, beyond it is another hallway.</l>
+<l>[A cheerful trill rings out from the keypad. It sounds almost polite.]</l>
+<l>Click.</l>
+<l>The lock gives with a dry, mechanical sigh.</l>
+<l>The door slides open. Beyond it, a narrow corridor stretches into shadow.</l>
 <s>You</s>
 <l>I did it!</l>
-<l>So it was a puzzle with Roman numerals. X as ten but also as a multiplier. Clever.</l>
-<l>Why would someone hide the exit behind a math trick?</l>
-<l>Are those the same people that dressed me like this? The same people that erased my memory, my identity?</l>
+<l>It was Roman numerals. X is ten, and X as a multiplier. A double meaning.</l>
+<l>But why would someone hide the exit behind a math trick?</l>
+<l>Were they the same people who dressed me like this? The ones who erased my identity from my brain?</l>
 <s>???</s>
-<l>You step forward.</l>
-<l>The corridor beyond is more narrow, its walls the same sterile steel. The hum of unseen machinery vibrates through your boots.</l>
-<l>No windows here, either.</l>
-<l>And then...</l>
-<l>You spot a figure at the far end of the hallway.</l>
-<l>Their body is encased in metal like yours. The same segmented plating and helmet. Another human?</l>
-<l>They start to run towards you. The running makes the floor clank audibly. For a moment, you feel like you might be in danger. But maybe they're just excited?</l>
+<l>You step forward. Your boots clang against the metal floor. You feel anxious, but full of vigor.</l>
+<l>The corridor is tighter then the room you woke up in.</l>
+<l>The same sterile steel presses in on both sides. No windows. The hum of unseen machines vibrates through the soles of your feet.</l>
+<l>But then...you startle. You see something in the distance.</l>
+<l>At the far end, a figure waits. Metal plating. Segmented armor.</l>
+<l>Like a mirror. This figure is identical to you.</l>
+<l>They begin to run towards you! The suit makes the floor clank with each stride. For a moment your heart catches.</l>
 <s>You</s>
-<l>Hey!</l>
-<s>Other Human?</s>
+<l>Hey!!!</l>
+<s>Human?</s>
 <l>Geez! Don't scare me like that!</l>
 <s>You</s>
-<l>Well, you suddenly ran towards me! You're the one who scared me!</l>
-<s>Other Human?</s>
-<l>Ugh! Sorry. Because of this creepy facility, I'm too on edge.</l>
-<l>I thought maybe you were the insane doctor who experimented on me! And you'd have some answers for me.</l>
+<l>What? You ran at me. You are the one who scared me.</l>
+<l>(What's their problem?)</l>
+<s>Human?</s>
+<l>Ugh, sorry. This place has me on edge.</l>
+<l>I thought you might be the insane doctor who experimented on me. Wanted to make sure that I could talk to you before you could run!</l>
 <s>You</s>
-<l>(Doctor...? What are they talking about? I guess it does look like we're in a hospital a bit...)</l>
-<s>Other Human?</s>
-<l>Erhm....I'm sorry. it's my mistake. I guess I felt excited and happy seeing somebody else!</l>
+<l>Doctor? What? What are you talking about?</l>
+<l>(The room looks like a hospital, I guess. But I do not remember seeing any doctor. Do they know something?)</l>
+<s>Human?</s>
+<l>Sorry. My bad, it was a bad joke. I was just excited to see another person.</l>
+<s>???</s>
+<l>Their voice is clear, but it feels filtered. Perfectly legible. You can make out the emotion, but it's impossible to make out any age or gender.</l>
+<l>You deduce that these suits hide more than physical features. They erase our voices as well.</l>
 <s>You</s>
-<l>That's okay. Seems like we're in the same predicament.</l>
-<l>At least there's some comfort in sharing this weird situation. We should exchange information.</l>
-<l>I'm a human from planet Earth, but I forgot my identity. I still know what humans are. I know English, Math and the like.</l>
-<s>Other Human</s>
-<l>I'm the same, I forgot everything about myself. My age, my name. My favourite colour.</l>
-<l>I woke up in this empty room here about fifteen minutes ago, in this suit I can't seem to take off.</l>
-<l>I had to solve this tough math puzzle on a keypad for some reason.</l>
+<l>It is fine. We seem to be in the same situation.</l>
+<l>Some company in this nightmare is better than none. First, we should exchange information.</l>
+<l>I know that I am a human from planet Earth. Aside from that, I forgot my identity. I still know what humans are. I know English, math and other facts.</l>
+<s>Human</s>
+<l>Same here. I forgot my name, my age, even my favourite colour!</l>
+<l>I woke up in an empty room about fifteen minutes ago, wearing this suit. I cannot take it off.</l>
+<l>I had to solve a weird think-out-of-the-box math puzzle on a keypad to get out.</l>
 <s>You</s>
-<l>Seems like the same thing happened to me. We just woke up in different locations.</l>
-<l>Thank you for telling me. Did you find anything in this hallway?</l>
-<s>Other Human</s>
-<l>Yeah. It seems like there's another keypad in the middle.</l>
-<l>So is this the rest of our existences? Solving math puzzles in a prison, and every time an identical person appears in the next room?</l>
+<l>Sounds like we went trough the same. The only difference seems to be that we woke up in seperate rooms.</l>
+<l>Thanks for the info. Did you find anything else in this hallway?</l>
+<s>Human</s>
+<l>There is another keypad, right in the middle. Contains another number puzzle and right next to a door.</l>
+<l>Is this all our lives now?! One puzzle after another, moving through identical corridors, meeting identical looking and sounding people?!</l>
+<l>Ugh! How are we going to deal with that?! What if we get hungry?!</l>
 <s>You</s>
-<l>L...let's hope not. Let's stay focused, and solve this next keypad first.</l>
-<l>I'm confident there will be answers.</l>
-<s>Other Human</s>
-<l>You're right! Let's focus on that. Wonder what the puzzle will be this time!</l>
+<l>For now, keep calm. Solve the keypad. There might be answers beyond this door.</l>
+<s>Human</s>
+<l>You are right! Focus. I wonder what the puzzle will be this time.</l>

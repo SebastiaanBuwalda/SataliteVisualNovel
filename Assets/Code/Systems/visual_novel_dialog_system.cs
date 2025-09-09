@@ -88,29 +88,47 @@ public class VisualNovelDialogSystem : MonoBehaviour
         var e = entries[index];
         speakerTMP.text = e.speaker;
 
+        // Stop any running typing coroutine (defensive)
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
         }
 
         if (useTypewriter)
             typingCoroutine = StartCoroutine(TypeText(e.line));
         else
+        {
             lineTMP.text = e.line;
+            // Make sure the TMP displays the full line when not using typewriter
+            lineTMP.maxVisibleCharacters = lineTMP.text.Length;
+        }
     }
 
     public void Advance()
     {
         if (entries == null || entries.Count == 0) return;
 
+        // If the typewriter is running, finish the current line immediately.
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
             typingCoroutine = null;
+
+            // Ensure the full text is set and fully visible.
             lineTMP.text = entries[index].line;
+            lineTMP.maxVisibleCharacters = lineTMP.text.Length;
             return;
         }
 
+        // If using typewriter but the displayed characters are partial, finish them.
+        if (useTypewriter && lineTMP.maxVisibleCharacters < lineTMP.text.Length)
+        {
+            lineTMP.maxVisibleCharacters = lineTMP.text.Length;
+            return;
+        }
+
+        // Move to next entry
         index++;
         if (audioSource != null && advanceSound != null)
         {
@@ -144,12 +162,15 @@ public class VisualNovelDialogSystem : MonoBehaviour
 
     IEnumerator TypeText(string text)
     {
-        lineTMP.text = string.Empty;
-        foreach (char c in text)
+        lineTMP.text = text;
+        lineTMP.maxVisibleCharacters = 0;
+        int totalChars = text.Length;
+        for (int i = 0; i <= totalChars; i++)
         {
-            lineTMP.text += c;
+            lineTMP.maxVisibleCharacters = i;
             yield return new WaitForSeconds(typeSpeed);
         }
+        lineTMP.maxVisibleCharacters = totalChars;
         typingCoroutine = null;
     }
 

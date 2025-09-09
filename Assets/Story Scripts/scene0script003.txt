@@ -1,3 +1,55 @@
 <s>???</s>
-<l>The keypad beeps. The door slides open.</l>
-<l>We did it.</l>
+<l>The keypad sings its cheerful tone again. The sound feels like it's mocking your joint despair now.</l>
+<s>Human</s>
+<l>We did it. This time, it was counting the segments of the numbers.</l>
+<s>You</s>
+<l>Yeah. Looks like these puzzles want us to think a little sideways. I wonder what the point is?</l>
+<l>If it's a prison we're in, then these make no sense, right? Why even give us the ability to open these doors?</l>
+<s>Human</s>
+<l>Right? That's why I was thinking we're some freaky science expiriment.</l>
+<s>???</s>
+<l>The door slides open with a hiss. A larger, empty room lies beyond, not unlike the one you woke up in.</l>
+<l>Two more humans stand inside, with identical suits to yours and the other human. They are examining something on the far wall.</l>
+<l>They turn to face you.</l>
+<l>Three other people now. All identical in voice and body. You brace yourself to keep track of each one.</l>
+<l>You label the excitable human you first met as "Human A." The newcomers become "Human B" and "Human C." </l>
+<l>Names will have to be discussed with the rest soon.</l>
+<s>Human A</s>
+<l>Heeey. What did I tell you?! Solve a puzzle, meet another set of duplicates. Over and over and over. We're screwed!</l>
+<s>???</s>
+<l>The other two walk towards you. Their movements are calm and precise. They seem much more composed than Human A was when you first met.</l>
+<s>Human B</s>
+<l>Greetings.</l>
+<s>Human C</s>
+<l>A pleasure to meet you. Well, strange circumstances to say the least.</l>
+<s>Human A</s>
+<l>Yeah. But still, happy to meet more humans. So...I can guess what's next; another puzzle, and then we meet four others!?</l>
+<s>Human B</s>
+<l>You're half right. Another puzzle awaits. But something ...dire is happening on the other side of this room's locked door.</l>
+<s>You</s>
+<l>What? What's up?</l>
+<s>Human C</s>
+<l>There's a weird voice on the other side, it's calling for help. Sounds like a kid.</l>
+<s>Human A</s>
+<l>Oh man! Kids in this place? The weird scientists that run this place have no ethics!</l>
+<s>???</s>
+<l>The four of you approach this room's locked door, next to the keypad.</l>
+<l>After putting your helmet-covered ear as close to the door as possible...you hear it too.</l>
+<s>voice</s>
+<l>HELP! SOMEBODY HELP! MANKIND'S ENEMY...IT'S GONNA KILL ME!</l>
+<s>???</s>
+<l>A protective instinct burns through your numbness and despair. You want to protect whoever's on the other end.</l>
+<s>Human C</s>
+<l>Something's off though.</l>
+<l>It just seems like they're just repeating these same calls. Nothing happened in the 5 minutes since we first heard it.</l>
+<l>And we know all these facts about Earth, humanity. But nothing about this "Mandkind's Enemy."</l>
+<s>???</s>
+<l>You hear their reasoning… but it slides off you. It almost irritates you. You feel the urge to lash out at them for hesitating.</l>
+<l>But you quickly prioritise. Another ridiculous math puzzle needs to be solved to save this poor child!</l>
+<s>You</s>
+<l>What? Come on! We have to help them! Whatever's going on, we need to save this child!</l>
+<s>Human C</s>
+<l>Think about it a bit more! It could be a trap.</l>
+<s>You</s>
+<l>You ignore their words. In fact, you try to completely block out the others' talking. You start focusing on the next puzzle.</l>
+<l>You need to save this kid at any cost!</l>
