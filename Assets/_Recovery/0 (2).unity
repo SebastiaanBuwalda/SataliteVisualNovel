@@ -7193,8 +7193,7 @@ MonoBehaviour:
   - {fileID: 2125161424}
   - {fileID: 447625854}
   delayBeforeSwitch: 2
-  objectsToEnable:
-  - {fileID: 1559790015}
+  objectsToEnable: []
   objectsToDisable:
   - {fileID: 1718523940}
 --- !u!61 &1940208474
