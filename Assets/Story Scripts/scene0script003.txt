@@ -50,6 +50,7 @@
 <l>What? Come on! We have to help them! Whatever's going on, we need to save this child!</l>
 <s>Human C</s>
 <l>Think about it a bit more! It could be a trap.</l>
+<l>The fact trhat we can recognize that the voice is a kid means they're not wearing one of these suits! Something is up!</l>
 <s>You</s>
 <l>You ignore their words. In fact, you try to completely block out the others' talking. You start focusing on the next puzzle.</l>
 <l>You need to save this kid at any cost!</l>

@@ -1,0 +1,44 @@
+<s>???</s>
+<l>You decide to make a run for it. You don't know what this figure wants or will do.</l>
+<l>You run back into the room you were just in.</l>
+<s>Pursuer </s>
+<l>Hey! Wait...I don't mean any harm!</l>
+<s>???</s>
+<l>You don't even think about their plea.</l>
+<l>Using all your power, you try to pull the door back shut.</l>
+<l>Adrelelaline rushes through your body, somehow, the door shuts back. The figure halts.</l>
+<s>Pursuer</s>
+<l>No! Wait! Please!</l>
+<l>I just want to talk!</l>
+<s>???</s>
+<l>They slam the door multiple times, before giving up.</l>
+<l>You hear them step away, and after a while, you faintly hear a keypad beep, and a door open.</l>
+<l>They're gone...you give a sigh of relief.</l>
+<l>What's next? You approach the keypad in your room.</l>
+<l>...But there's no puzzle anymore.</l>
+<l>Your heart sinks. Now what?</l>
+<l>At first you wait. You sit on the floor. Minutes pass. The room hums low.</l>
+<l>An hour slips by. You check the keypad again. Nothing. Your hands shake a little more.</l>
+<l>Another hour crawls past. You stand and pace. Your throat is dry. The taste in your mouth is metal and dust.</l>
+<l>Maybe knocking the door will make somebody hear it!</l>
+<l>You knock once. Then again. againagainagainagain. Each knock feels smaller than the last.</l>
+<l>Time lengthens. The need in your chest sharpens. It is not just for the puzzle. You're getting hungry.</l>
+<l>Three hours! You rub your eyes. Your stomach tightens.</l>
+<l>Four hours? Or Six? You start slamming and tackling the door. But nobody answers.</l>
+<l>Ten hours. Your hands are raw from hitting the door.</l>
+<l>The hunger worsens. It is not just for food. It is for hope.</l>
+<l>The thirst follows. Your lips split. You swallow and the sound is hollow in your helmet.</l>
+<l>Hours pass. hours pass hours pass hours pass hours padss</l>
+<l>Your thoughts loop. Puzzle. Lock. Open. Puzzle.</l>
+<l>You pace. You pound. You sit and stare. You now slam the keypad again and again and again.</l>
+<l>Your body frays. Your vision blurs at the edges. You taste iron. You lick your cracked lips.</l>
+<l>At some point your hands bleed under your suit. You feel the sting and keep going. The pain is welcome. It proves you are still here.</l>
+<l>You slam until your arms ache. You punch the keypad until the metal cracks.</l>
+<l>You never figured out who that pursuer was.</l>
+<l>You never figured out why you're wearing this weird suit.</l>
+<l>You will die not knowing your name, age, gender. But who cares?</l>
+<l>You don't need an identity if you're dead</l>
+<s>System</s>
+<l>BAD ENDING I: A COWARD'S END</l>
+<l>You will now be send to the other choice: STAY AND TALK TO THE FIGURE. Best of luck in your next timeline.</l>
+<s>You</s>

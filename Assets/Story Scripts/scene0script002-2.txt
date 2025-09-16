@@ -1,0 +1,37 @@
+<s>You</s>
+<l>Hey!!!</l>
+<s>Human?</s>
+<l>Geez! Don't scare me like that!</l>
+<s>You</s>
+<l>What? You ran at me. You are the one who scared me.</l>
+<l>(What's their problem?)</l>
+<s>Human?</s>
+<l>Ugh, sorry. This place has me on edge.</l>
+<l>I thought you might be the insane doctor who experimented on me. Wanted to make sure that I could talk to you before you could run!</l>
+<s>You</s>
+<l>Doctor? What? What are you talking about?</l>
+<l>(The room looks like a hospital, I guess. But I do not remember seeing any doctor. Do they know something?)</l>
+<s>Human?</s>
+<l>Sorry. My bad, it was a bad joke. I was just excited to see another person.</l>
+<s>???</s>
+<l>Their voice is clear, but it feels filtered. Perfectly legible. You can make out the emotion, but it's impossible to make out any age or gender.</l>
+<l>You deduce that these suits hide more than physical features. They erase our voices as well.</l>
+<s>You</s>
+<l>It is fine. We seem to be in the same situation.</l>
+<l>Some company in this nightmare is better than none. First, we should exchange information.</l>
+<l>I know that I am a human from planet Earth. Aside from that, I forgot my identity. I still know what humans are. I know English, math and other facts.</l>
+<s>Human</s>
+<l>Same here. I forgot my name, my age, even my favourite colour!</l>
+<l>I woke up in an empty room about fifteen minutes ago, wearing this suit. I cannot take it off.</l>
+<l>I had to solve a weird think-out-of-the-box math puzzle on a keypad to get out.</l>
+<s>You</s>
+<l>Sounds like we went trough the same. The only difference seems to be that we woke up in seperate rooms.</l>
+<l>Thanks for the info. Did you find anything else in this hallway?</l>
+<s>Human</s>
+<l>There is another keypad, right in the middle. Contains another number puzzle and right next to a door.</l>
+<l>Is this all our lives now?! One puzzle after another, moving through identical corridors, meeting identical looking and sounding people?!</l>
+<l>Ugh! How are we going to deal with that?! What if we get hungry?!</l>
+<s>You</s>
+<l>For now, keep calm. Solve the keypad. There might be answers beyond this door.</l>
+<s>Human</s>
+<l>You are right! Focus. I wonder what the puzzle will be this time.</l>
