@@ -25,6 +25,8 @@ public class VisualNovelDialogSystem : MonoBehaviour
     [Header("Typewriter & behavior")]
     [SerializeField] private float typeSpeed = 0.02f;
     [SerializeField] private bool useTypewriter = true;
+    [SerializeField] private GameObject nextLineIndicator;
+
 
     [SerializeField] private GameObject[] objectsThatDisableAfterDialogue;
     [SerializeField] private GameObject[] objectsThatEnableAfterDialogue;
@@ -88,6 +90,8 @@ public class VisualNovelDialogSystem : MonoBehaviour
         var e = entries[index];
         speakerTMP.text = e.speaker;
 
+        nextLineIndicator.SetActive(false);
+
         // Stop any running typing coroutine (defensive)
         if (typingCoroutine != null)
         {
@@ -102,6 +106,8 @@ public class VisualNovelDialogSystem : MonoBehaviour
             lineTMP.text = e.line;
             // Make sure the TMP displays the full line when not using typewriter
             lineTMP.maxVisibleCharacters = lineTMP.text.Length;
+
+            nextLineIndicator.SetActive(true);
         }
     }
 
@@ -118,6 +124,7 @@ public class VisualNovelDialogSystem : MonoBehaviour
             // Ensure the full text is set and fully visible.
             lineTMP.text = entries[index].line;
             lineTMP.maxVisibleCharacters = lineTMP.text.Length;
+            nextLineIndicator.SetActive(true);
             return;
         }
 
@@ -125,6 +132,7 @@ public class VisualNovelDialogSystem : MonoBehaviour
         if (useTypewriter && lineTMP.maxVisibleCharacters < lineTMP.text.Length)
         {
             lineTMP.maxVisibleCharacters = lineTMP.text.Length;
+            nextLineIndicator.SetActive(true);
             return;
         }
 
@@ -137,6 +145,7 @@ public class VisualNovelDialogSystem : MonoBehaviour
         if (index >= entries.Count)
         {
             Debug.Log("Dialogue finished.");
+            nextLineIndicator.SetActive(false);
             // Enable objects
             if (objectsThatEnableAfterDialogue != null)
             {
@@ -172,6 +181,7 @@ public class VisualNovelDialogSystem : MonoBehaviour
         }
         lineTMP.maxVisibleCharacters = totalChars;
         typingCoroutine = null;
+        nextLineIndicator.SetActive(true);
     }
 
     [System.Serializable]

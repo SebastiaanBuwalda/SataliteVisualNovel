@@ -42,7 +42,7 @@
 <s>Human C</s>
 <l>Something's off though.</l>
 <l>It just seems like they're just repeating these same calls. Nothing happened in the 5 minutes since we first heard it.</l>
-<l>And we know all these facts about Earth, humanity. But nothing about this "Mandkind's Enemy."</l>
+<l>And we know all these facts about Earth, humanity. But nothing about this "Mankind's Enemy."</l>
 <s>???</s>
 <l>You hear their reasoning… but it slides off you. It almost irritates you. You feel the urge to lash out at them for hesitating.</l>
 <l>But you quickly prioritise. Another ridiculous math puzzle needs to be solved to save this poor child!</l>
