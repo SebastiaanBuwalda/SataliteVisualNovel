@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2a2f1cc22a9954140ac3d0f8440d252b
+guid: 6632d296a9c664184b22dccb701822b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7724120711627453859
-    second: BrailleChartfornumbers-R_0
+      213: -7099666043398078850
+    second: background (25)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BrailleChartfornumbers-R_0
+      name: background (25)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 595
-        height: 502
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a5bac2fcd6913b60800000000000000
-      internalID: 7724120711627453859
+      spriteID: e7eba53695be87d90800000000000000
+      internalID: -7099666043398078850
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BrailleChartfornumbers-R_0: 7724120711627453859
+      background (25)_0: -7099666043398078850
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
