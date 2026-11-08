@@ -1,50 +1,57 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
-using TMPro; // Needed for TextMeshPro
 
+/// <summary>Responds to a click anywhere, then toggles menu or hint objects after a delay.</summary>
 public class ClickSoundAndToggle : MonoBehaviour
 {
-    [Header("Sound Settings")]
-    public AudioSource audioSource; // Drag AudioSource with your sound clip here
+    [Header("Sound")]
+    [SerializeField] private AudioSource audioSource;
 
-    [Header("Toggle Settings")]
-    public GameObject[] objectsToToggle; // Assign objects in Inspector
-    public float delaySeconds = 2f; // Delay before toggling objects
+    [Header("Toggle")]
+    [SerializeField] private GameObject[] objectsToToggle;
+    [SerializeField, Min(0f)] private float delaySeconds = 2f;
 
-    [Header("Text Settings")]
-    public TMP_Text tmpText; // Drag your TMP text object here
-    public Color targetColor = Color.red; // New color for text
+    [Header("Text")]
+    [SerializeField] private TMP_Text tmpText;
+    [SerializeField] private Color targetColor = Color.red;
 
-    private bool hasClicked = false;
+    private bool isWaiting;
+    private int activationFrame;
 
-    void Update()
+    private void OnEnable() => activationFrame = Time.frameCount;
+
+    private void OnDisable()
     {
-        if (Input.GetMouseButtonDown(0) && !hasClicked) // Left mouse click
-        {
-            hasClicked = true;
-
-            // Play the sound
-            if (audioSource != null)
-                audioSource.Play();
-
-            // Change text color
-            if (tmpText != null)
-                tmpText.color = targetColor;
-
-            // Start object toggle coroutine
-            StartCoroutine(ToggleObjectsAfterDelay());
-        }
+        StopAllCoroutines();
+        isWaiting = false;
     }
 
-    private System.Collections.IEnumerator ToggleObjectsAfterDelay()
+    private void Update()
     {
-        yield return new WaitForSeconds(delaySeconds);
-
-        foreach (GameObject obj in objectsToToggle)
+        if (Time.frameCount <= activationFrame || isWaiting || !Input.GetMouseButtonDown(0))
         {
-            if (obj != null)
-                obj.SetActive(!obj.activeSelf); // Toggle
+            return;
         }
 
-        hasClicked = false; // Optional: allow clicking again
+        isWaiting = true;
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
+        if (tmpText != null)
+        {
+            tmpText.color = targetColor;
+        }
+
+        StartCoroutine(ToggleObjectsAfterDelay());
+    }
+
+    private IEnumerator ToggleObjectsAfterDelay()
+    {
+        yield return new WaitForSeconds(delaySeconds);
+        isWaiting = false;
+        SceneObjectState.Toggle(objectsToToggle);
     }
 }

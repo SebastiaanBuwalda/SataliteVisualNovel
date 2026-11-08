@@ -1,27 +1,24 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class TextPulse : MonoBehaviour
 {
-    public TextMeshPro tmpText; // Assign in Inspector
-    public Color startColor = Color.white;
-    public Color endColor = Color.red;
-    public float pulseSpeed = 0.2f; // Pulses per second
+    [SerializeField] private TextMeshPro tmpText;
+    [SerializeField] private Color startColor = Color.white;
+    [SerializeField] private Color endColor = Color.red;
+    [Tooltip("Pulses per second.")]
+    [SerializeField, Min(0f)] private float pulseSpeed = 0.2f;
 
-    void Update()
+    private void Update()
     {
-        if (tmpText != null)
+        if (tmpText == null)
         {
-            // Sin wave from 0 to 1
-            float t = (Mathf.Sin(Time.time * pulseSpeed * Mathf.PI * 2) + 1f) / 2f;
-
-            // Ease in/out more dramatically for heartbeat effect
-            t = Mathf.SmoothStep(0f, 1f, t); 
-
-            // Optional: exaggerate the linger at red using a curve
-            t = Mathf.Pow(t, 2f);
-
-            tmpText.color = Color.Lerp(startColor, endColor, t);
+            return;
         }
+
+        float phase = (Mathf.Sin(Time.time * pulseSpeed * Mathf.PI * 2f) + 1f) * 0.5f;
+        float easedPhase = Mathf.SmoothStep(0f, 1f, phase);
+        // Squaring the phase keeps the text near its start color for longer.
+        tmpText.color = Color.Lerp(startColor, endColor, easedPhase * easedPhase);
     }
 }

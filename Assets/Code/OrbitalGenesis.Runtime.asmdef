@@ -1,0 +1,7 @@
+{
+  "name": "OrbitalGenesis.Runtime",
+  "references": [
+    "Unity.TextMeshPro",
+    "UnityEngine.UI"
+  ]
+}

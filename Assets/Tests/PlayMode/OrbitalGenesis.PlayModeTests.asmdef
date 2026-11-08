@@ -1,0 +1,11 @@
+{
+  "name": "OrbitalGenesis.PlayModeTests",
+  "references": [
+    "OrbitalGenesis.Runtime",
+    "Unity.TextMeshPro",
+    "UnityEngine.UI"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

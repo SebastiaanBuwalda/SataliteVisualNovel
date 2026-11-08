@@ -1,0 +1,12 @@
+{
+  "name": "OrbitalGenesis.EditModeTests",
+  "references": [
+    "OrbitalGenesis.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}
